@@ -9,7 +9,9 @@ const Navigation = () => (
   <header id="header">
     <h1 className="index-link">
       {routes.filter((l) => l.index).map((l) => (
-        <Link key={l.label} to={l.path}>{l.label}</Link>
+        <Link key={l.path} to={l.path}>
+          <img src={l.img} alt="Header Icon" />
+        </Link>
       ))}
     </h1>
     <nav className="links">

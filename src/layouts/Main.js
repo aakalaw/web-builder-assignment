@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
+import ContactIcons from '../components/Contact/ContactIcons';
 import { ThemeProvider } from '../components/Theme/theme-provider';
-import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
-import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
 
 const Main = (props) => (
@@ -16,9 +16,8 @@ const Main = (props) => (
     enableSystem
     disableTransitionOnChange
     >
-    <Analytics />
     <ScrollToTop />
-    <Helmet titleTemplate="%s | Angelo Aaron Kalaw" defaultTitle="Angelo Aaron Kalaw" defer={false}>
+    <Helmet titleTemplate="%s | Web Builder Assignment" defaultTitle="Web Builder Assigment" defer={false}>
       {props.title && <title>{props.title}</title>}
       <meta name="description" content={props.description} />
     </Helmet>
@@ -26,9 +25,13 @@ const Main = (props) => (
       <Navigation />
       <div id="main">
         {props.children}
+        <section id="footer">
+          <ContactIcons />
+          <p className="copyright"> Website Designed & Developed by <Link to="">Angelo Aaron Kalaw</Link>.</p>
+        </section>
       </div>
-      {props.fullPage ? null : <SideBar />}
     </div>
+    
     </ThemeProvider>
   </HelmetProvider>
 );
@@ -47,7 +50,7 @@ Main.defaultProps = {
   children: null,
   fullPage: false,
   title: null,
-  description: "AAK's personal website.",
+  description: "Web Builder Assignment Website.",
 };
 
 export default Main;

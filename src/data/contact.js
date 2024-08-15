@@ -8,27 +8,27 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 
 const data = [
   {
-    link: 'mailto:angeloaaronkalaw@gmail.com',
+    link: '',
     label: 'Email',
     icon: faEnvelope,
   },
   {
-    link: 'https://api.whatsapp.com/send?phone=09085655001',
+    link: '',
     label: 'Github',
     icon: faWhatsapp,
   },
   {
-    link: 'https://www.linkedin.com/in/angeloaaronkalaw',
+    link: '',
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
   {
-    link: 'https://www.facebook.com/angeloaaronkalaw',
+    link: '',
     label: 'Facebook',
     icon: faFacebookF,
   },
   {
-    link: 'https://github.com/aakalaw',
+    link: '',
     label: 'Github',
     icon: faGithub,
   },

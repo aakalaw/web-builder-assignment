@@ -1,27 +1,39 @@
 const routes = [
   {
     index: true,
-    label: 'ANGELO AARON KALAW',
+    img: '/images/favicon/android-icon-48x48.png',
     path: '/',
   },
   {
-    label: 'About',
-    path: '/about',
+    label: 'MEET THE TEAM',
+    path: '/meet-the-team',
   },
   {
-    label: 'Resume',
-    path: '/resume',
+    label: 'SEARCH FOR HOMES',
+    path: '/search-for-homes',
   },
   {
-    label: 'Projects',
-    path: '/projects',
+    label: 'OUR COMMUNITIES',
+    path: '/our-communities',
   },
   {
-    label: 'Stats',
-    path: '/stats',
+    label: 'HOME EVALUATION',
+    path: '/home-evaluation',
   },
   {
-    label: 'Contact',
+    label: 'SERVICES',
+    path: '/services',
+  },
+  {
+    label: 'HOMES ACROSS AMERICA',
+    path: '/homes-across-america',
+  },
+  {
+    label: 'TESTIMONIALS',
+    path: '/testimonials',
+  },
+  {
+    label: 'CONTACT US',
     path: '/contact',
   },
 ];
