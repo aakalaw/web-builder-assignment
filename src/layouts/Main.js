@@ -17,7 +17,7 @@ const Main = (props) => (
     disableTransitionOnChange
     >
     <ScrollToTop />
-    <Helmet titleTemplate="%s | Web Builder Assignment" defaultTitle="Web Builder Assigment" defer={false}>
+    <Helmet titleTemplate="%s | Real Estate" defaultTitle="Real Estate" defer={false}>
       {props.title && <title>{props.title}</title>}
       <meta name="description" content={props.description} />
     </Helmet>
@@ -27,7 +27,7 @@ const Main = (props) => (
         {props.children}
         <section id="footer">
           <ContactIcons />
-          <p className="copyright"> Website Designed & Developed by <Link to="">Angelo Aaron Kalaw</Link>.</p>
+          <p className="copyright"> Website Designed & Developed by <Link to="">Angelo Aaron Kalaw</Link></p>
         </section>
       </div>
     </div>

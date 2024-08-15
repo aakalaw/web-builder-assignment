@@ -17,7 +17,7 @@ const Index = () => (
           </p>
         </div>
       </header>
-      <p> Go to <Link to="/services">Services</Link> </p>
+      <p> Click here to learn more about our<Link to="/services"> Real Estate Services.</Link> </p>
     </article>
 
   </Main>

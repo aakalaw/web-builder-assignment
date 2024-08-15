@@ -10,7 +10,7 @@ const Navigation = () => (
     <h1 className="index-link">
       {routes.filter((l) => l.index).map((l) => (
         <Link key={l.path} to={l.path}>
-          <img src={l.img} alt="Header Icon" />
+          <img className="header-icon" src={l.img} alt="Header Icon" />
         </Link>
       ))}
     </h1>

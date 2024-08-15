@@ -10,31 +10,18 @@ const validateText = (text) => {
 };
 
 const messages = [
-  'kamusta',
-  'konnichiwa',
-  'annyeonghaseyo',
-  'nǐ hǎo',
-  'ciao',
-  'hello',
   'hi',
-  'hallo',
-  'hola',
-  'olá',
-  'bonjour',
-  'marhaba',
-  'privyet',
-  'you-can-email-me-at-literally-anything! Really',
-  'well, not anything. But most things',
-  'like-this',
-  'or-this',
-  'but not this :(  ',
-  'you.can.also.email.me.with.specific.topics.like',
-  'just-saying-hi',
-  'please-work-for-us',
-  'help',
-  'admin',
-  'or-I-really-like-your-website',
-  'thanks 😊',
+  'Looking for a home? Let’s talk!',
+  'Ready to buy or sell? Contact me!',
+  'Find your dream home with us.',
+  'Need real estate help? Just ask!',
+  'Check out our latest listings.',
+  'Thinking about real estate? Get in touch!',
+  'Ready to move? Let’s find your home.',
+  'Have questions? I have answers!',
+  'Let’s make your real estate dreams come true.',
+  'Need info? I’m here to help!',
+  'thanks',
 ];
 
 const useInterval = (callback, delay) => {
@@ -92,9 +79,9 @@ const EmailLink = ({ loopMessage }) => {
       onMouseEnter={() => setIsActive(false)}
       onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
     >
-      <a href={validateText(message) ? `mailto:${message}angeloaaronkalaw@gmail.com` : ''}>
-        <span>angeloaaronkalaw@gmail.com </span>
+      <a href={validateText(message) ? `mailto:${message}@realestate.com` : ''}>
         <span>{message}</span>
+        <span>@realestate.com</span>
       </a>
     </div>
   );

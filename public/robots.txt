@@ -1,4 +1,2 @@
 User-agent: *
 Disallow: /api
-Allow: https://aakalaw.github.io/images/favicon/favicon-96x96.png
-Sitemap: https://aakalaw.github.io/sitemap.xml

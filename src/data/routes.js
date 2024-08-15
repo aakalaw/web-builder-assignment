@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    img: '/images/favicon/android-icon-48x48.png',
+    img: '/images/header-icon.jpg',
     path: '/',
   },
   {

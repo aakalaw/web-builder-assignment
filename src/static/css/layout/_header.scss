@@ -13,15 +13,31 @@
 	#header {
 		@include vendor('display', 'flex');
 		@include vendor('justify-content', 'space-between');
-		background-color: _palette(bg);
+		background-color: _palette(fg-bold);
 		border-bottom: solid 1px _palette(border);
-		height: 3.5em;
+		height: 5em;
 		left: 0;
-		line-height: 3.5em;
+		line-height: 5em;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: _misc(z-index-base);
+
+		.header-icon {
+			width: 65px; // Default size
+			padding: 1.0em 0 0 0;
+		
+			// Media query for larger screens
+			@include breakpoint(medium) {
+			  width: 30px; // Smaller size for medium screens
+			}
+		
+			// Media query for even smaller screens
+			@include breakpoint(small) {
+			  width: 20px; // Even smaller size for small screens
+			}
+		  }
+		
 
 		a {
 			color: inherit;
