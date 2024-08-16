@@ -9,10 +9,9 @@
   position: relative;
 
   .description {
-    position: absolute;
+    position: inherit;
     padding: 0;
-    bottom: 0;
-    border-top: solid 1px _palette(border);
+    bottom: inherit;
 
     p {
       font-size: 0.9rem;

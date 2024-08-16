@@ -1,48 +1,40 @@
+// Services.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import Main from '../layouts/Main';
+import { CommandDemo } from '../components/CommandDemo';
 
-import Education from '../components/Resume/Education';
-import Experience from '../components/Resume/Experience';
-import Skills from '../components/Resume/Skills';
-import Courses from '../components/Resume/Courses';
-import References from '../components/Resume/References';
 
-import courses from '../data/resume/courses';
-import degrees from '../data/resume/degrees';
-import work from '../data/resume/work';
-import { skills, categories } from '../data/resume/skills';
 
-// NOTE: sections are displayed in order defined.
-const sections = {
-  Education: () => <Education data={degrees} />,
-  Experience: () => <Experience data={work} />,
-  Skills: () => <Skills skills={skills} categories={categories} />,
-  Courses: () => <Courses data={courses} />,
-  References: () => <References />,
-};
+import Cell from '../components/Services/Cell';
+import data from '../data/services';
 
 const Services = () => (
   <Main
     title="Services"
     description="Web Builder Assignment's Services."
   >
-    <article className="post" id="resume">
-      <header>
-        <div className="title">
-          <h2><Link to="/services">Services</Link></h2>
-          <div className="link-container">
-            <h4><a href="https://drive.google.com/file/d/1C13HTZC7-uhjrz4F2UbI0Ie39msvixFh/view">download</a></h4>
-            {Object.keys(sections).map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>))}
-          </div>
-        </div>
-      </header>
-      {Object.entries(sections).map(([name, Section]) => (
-        <Section key={name} />
+    <header id="services">
+      <div className="title">
+        <h2>Services</h2>
+        <p>Your commercial property objectives are our priority.</p>
+      </div>
+      <FontAwesomeIcon className="search-icon" icon={faSearch} />
+        <form id="search" method="get" action="/services">
+          <input type="text" name="query" placeholder="Search by Address or Area" />
+        </form>
+    </header>
+
+    <article id="services" className="cell-container">
+    {data.map((services) => (
+        <Cell
+          data={services}
+          key={services.title}
+        />
       ))}
     </article>
   </Main>

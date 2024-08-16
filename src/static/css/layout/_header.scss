@@ -6,6 +6,12 @@
 
 /* Header */
 
+	/* Solid background state when scrolled */
+	#header.scrolled {
+		background-color: _palette(fg-bold); /* Replace _palette(bg) with your solid color */
+		color: _palette(bg);
+	}
+
 	body {
 		padding-top: 3.5em;
 	}
@@ -13,7 +19,8 @@
 	#header {
 		@include vendor('display', 'flex');
 		@include vendor('justify-content', 'space-between');
-		background-color: _palette(bg);
+		background-color: transparent; /* Semi-transparent background */
+		transition: background-color 0.3s ease; /* Smooth transition for background color */
 		color: _palette(fg-bold);
 		border-bottom: solid 1px _palette(border);
 		height: 5em;
@@ -25,19 +32,29 @@
 		z-index: _misc(z-index-base);
 
 		.header-icon {
-			width: 65px; // Default size
+			width: 65px; // Default size for extra-large screens
 			padding: 1.0em 0 0 0;
-		
-			// Media query for larger screens
+		  
+			// Media query for large screens
+			@include breakpoint(large) {
+			  width: 55px; // Slightly smaller size for large screens
+			}
+		  
+			// Media query for medium screens
 			@include breakpoint(medium) {
-			  width: 30px; // Smaller size for medium screens
+			  width: 45px; // Smaller size for medium screens
 			}
-		
-			// Media query for even smaller screens
+		  
+			// Media query for small screens
 			@include breakpoint(small) {
-			  width: 20px; // Even smaller size for small screens
+			  width: 35px; // Smaller size for small screens
 			}
-		  }
+		  
+			// Media query for extra-small screens
+			@include breakpoint(xsmall) {
+			  width: 25px; // Even smaller size for extra-small screens
+			}
+		}
 		
 
 		a {
@@ -171,7 +188,7 @@
 
 			.main {
 				.search {
-					display: none;
+					display: block;
 				}
 			}
 		}

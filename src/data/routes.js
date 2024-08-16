@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    img: '/images/header-icon.jpg',
+    img: '/images/header-logo-no-bg.png',
     path: '/',
   },
   {

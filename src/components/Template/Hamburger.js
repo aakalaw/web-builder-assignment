@@ -29,6 +29,9 @@ const Hamburger = () => {
                 <h3><Link to="/">Home</Link></h3>
               </li>
               <li>
+                <h3><Link to="/services">Services</Link></h3>
+              </li>
+              <li>
                 <h3><Link to="/contact">Contact Us</Link></h3>
               </li>
           </ul>
