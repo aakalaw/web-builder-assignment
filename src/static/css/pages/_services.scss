@@ -1,39 +1,43 @@
-/* _services.scss */
+/* Services */
 
-#services{
+  #services{
 
-  h2 {
-    font-size: 36px;
-    font-family: "RomainBold", Georgia, serif;
+    .period {
+      color: #ff0000; 
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .search-icon {
+    display: fixed;
+    margin-top: 2.1rem;
+    color: _palette(accent);
+    }
+
+  #search {
+    margin-top: -3.3rem;
+    margin-left: 1.5rem;
   }
 
-  img {
-    display: grid;
-    width: 100%;
-    height: auto;
-  }
+    .card-1 {
+      width: 500px;
+      height: 500px; 
+      border-radius: 15%;
+      object-fit: cover;
+      overflow: hidden;
+    }
 
-  .search-icon {
-  display: fixed;
-  margin-top: 2.1rem;
-  color: _palette(accent);
-  }
+    .cell-container {
 
-  .cell-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Dynamic columns, responsive to container width
-    grid-template-rows: repeat(3, auto); // Exactly 3 rows with automatic height
-    gap: 1rem; // Space between grid items
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    h3{
-      color: _palette(accent);
+      h3 {
+        color: _palette(fg);
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: _palette(accent);
+        }
+      }
     }
   }
-  
-#search{
-  margin-top: -3.3rem;
-  margin-left: 1.5rem;
-}
-  
-}

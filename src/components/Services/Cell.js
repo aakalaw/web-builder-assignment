@@ -5,7 +5,7 @@ const Cell = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
       <header>
-        <h3><a href={data.link}>{data.title}</a></h3>
+        <h3><a>{data.title}</a></h3>
       </header>
       <a href={data.url} className="image">
         <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />

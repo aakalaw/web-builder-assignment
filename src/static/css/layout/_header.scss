@@ -6,21 +6,14 @@
 
 /* Header */
 
-	/* Solid background state when scrolled */
-	#header.scrolled {
-		background-color: _palette(fg-bold); /* Replace _palette(bg) with your solid color */
-		color: _palette(bg);
-	}
-
 	body {
 		padding-top: 3.5em;
 	}
-
 	#header {
 		@include vendor('display', 'flex');
 		@include vendor('justify-content', 'space-between');
-		background-color: transparent; /* Semi-transparent background */
-		transition: background-color 0.3s ease; /* Smooth transition for background color */
+		background-color: transparent;
+		transition: background-color 0.3s ease;
 		color: _palette(fg-bold);
 		border-bottom: solid 1px _palette(border);
 		height: 5em;
@@ -192,6 +185,12 @@
 				}
 			}
 		}
+	}
+
+	/* Solid background state when scrolled */
+	#header.scrolled {
+		background-color: _palette(fg-bold);
+		color: _palette(bg);
 	}
 
 	/* Position and sizing of burger button */

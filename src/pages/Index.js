@@ -13,11 +13,11 @@ const Index = () => (
         <div className="title">
           <h2><Link to="/">About this site</Link></h2>
           <p>
-            A functional and responsive static web application developed using HTML, CSS, and modern JavaScript.
+          A responsive, statically-generated, react application written with modern Javascript.
           </p>
         </div>
       </header>
-      <p> Click here to learn more about our<Link to="/services"> Real Estate Services.</Link> </p>
+      <p> Learn more about our<Link to="/services"> Real Estate Services here.</Link> </p>
     </article>
 
   </Main>

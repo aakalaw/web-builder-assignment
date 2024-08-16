@@ -1,40 +1,40 @@
-// Not found page
+/* Hamburger Menu */
 
-.bm-item-list {
-  margin-top: 12em;
-}
-
-.menu-hover {
- padding: 0 1em;
-}
-
-.menu-hover:hover {
-  opacity: 0.5;
-}
-
-.hamburger-ul {
-  display: block;
-
-  li a h3 {
-    border: 0;
-    border-top: dotted 1px rgba(160, 160, 160, 0.3);
-    margin: 2em 0 0 0;
-    padding: 2em 0 0 0;
+  .bm-item-list {
+    margin-top: 12em;
   }
 
-  li a h3:hover {
-    color: _palette(accent);
+  .menu-hover {
+  padding: 0 1em;
   }
 
-  li {
-    display: block !important;
+  .menu-hover:hover {
+    opacity: 0.5;
   }
 
-  h3 {
-    font-size: 1em;
-  }
+  .hamburger-ul {
+    display: block;
 
-  .index-li {
-    border-top: none;
+    li a h3 {
+      border: 0;
+      border-top: dotted 1px rgba(160, 160, 160, 0.3);
+      margin: 2em 0 0 0;
+      padding: 2em 0 0 0;
+    }
+
+    li a h3:hover {
+      color: _palette(accent);
+    }
+
+    li {
+      display: block !important;
+    }
+
+    h3 {
+      font-size: 1em;
+    }
+
+    .index-li {
+      border-top: none;
+    }
   }
-}
