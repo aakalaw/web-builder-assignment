@@ -5,19 +5,16 @@ import Main from '../layouts/Main';
 
 const Index = () => (
   <Main
-    description={"AAK's personal website.  "
-    + '.'}
+    description="Real Estate Home Solution's About."
   >
+    <header id="services">
+      <div className="title">
+        <h2>About this site<span className="period">.</span></h2>
+          <p>A responsive, statically-generated, react application written with modern Javascript.</p>
+      </div>
+    </header>
     <article className="post" id="index">
-      <header>
-        <div className="title">
-          <h2><Link to="/">About this site</Link></h2>
-          <p>
-          A responsive, statically-generated, react application written with modern Javascript.
-          </p>
-        </div>
-      </header>
-      <p> Learn more about our<Link to="/services"> Real Estate Services here.</Link> </p>
+      <p>Find out more about our <Link to="/services">Real Estate Services</Link> here.</p>
     </article>
 
   </Main>

@@ -12,7 +12,7 @@ import data from '../data/services';
 const Services = () => (
   <Main
     title="Services"
-    description="Web Builder Assignment's Services."
+    description="Real Estate Home Solution's Services."
   >
     <header id="services">
       <div className="title">

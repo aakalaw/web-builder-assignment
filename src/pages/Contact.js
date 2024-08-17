@@ -10,11 +10,16 @@ const Contact = () => (
     title="Contact Us"
     description="Contact Real State @realstate.com"
   >
+    <header id="services">
+      <div className="title">
+        <h2>Contact Us<span className="period">.</span></h2>
+          <p>Please feel free to reach out if you need any assistance. We&apos;re happy to help.</p>
+      </div>
+    </header>
     <article className="post" id="contact">
       <header>
         <div className="title">
-          <h2><Link to="/contact">Contact</Link></h2>
-          <p>Please feel free to reach out if you need any assistance. We&apos;re happy to help.</p>
+          <p>Send us a message.</p>
           <ContactForm />
         </div>
       </header>
